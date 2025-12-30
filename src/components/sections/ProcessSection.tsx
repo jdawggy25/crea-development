@@ -1,8 +1,6 @@
 "use client";
 
 import { BlurFade } from "@/components/ui/blur-fade";
-import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern";
-import { cn } from "@/lib/utils";
 import {
   MapTrifold,
   Compass,
@@ -60,37 +58,8 @@ const services = [
 
 export function ProcessSection() {
   return (
-    <section id="services" className="py-24 md:py-32 bg-[#FAF8F5] relative overflow-hidden">
-      {/* Layered Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#FAF8F5] via-[#FAF8F5] to-[#F4F1ED]" />
-
-      {/* Animated Grid Pattern Background */}
-      <AnimatedGridPattern
-        numSquares={25}
-        maxOpacity={0.06}
-        duration={5}
-        width={60}
-        height={60}
-        className={cn(
-          "absolute inset-0 h-full w-full",
-          "fill-[#8B7355]/15 stroke-[#8B7355]/08",
-          "[mask-image:radial-gradient(ellipse_at_center,white_20%,transparent_75%)]"
-        )}
-      />
-
-      {/* Subtle warm glow */}
-      <div
-        className="absolute blur-[120px] opacity-15 pointer-events-none"
-        style={{
-          background: 'radial-gradient(circle, #8B7355 0%, transparent 70%)',
-          width: '500px',
-          height: '500px',
-          top: '30%',
-          left: '5%',
-        }}
-      />
-
-      <div className="container relative z-10">
+    <section id="services" className="py-24 md:py-32 bg-[#FAF8F5]">
+      <div className="container">
         {/* Header */}
         <div className="text-center mb-16">
           <BlurFade delay={0.1} inView>
