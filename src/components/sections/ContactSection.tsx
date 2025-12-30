@@ -53,9 +53,12 @@ export function ContactSection() {
               {contacts.map((contact, index) => (
                 <BlurFade key={contact.name} delay={0.4 + index * 0.1} inView>
                   <div className="group">
-                    <h3 className="font-[family-name:var(--font-playfair)] text-xl text-[#2C2824] mb-3">
+                    <h3 className="font-[family-name:var(--font-playfair)] text-xl text-[#2C2824]">
                       {contact.name}
                     </h3>
+                    <p className="text-[11px] uppercase tracking-[2px] text-[#8B7355] mb-3">
+                      {contact.title}
+                    </p>
                     <div className="flex flex-col gap-2">
                       <a
                         href={`tel:${contact.phone.replace(/-/g, "")}`}
