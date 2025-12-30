@@ -14,8 +14,9 @@ const contacts = [
   },
   {
     name: "Alex Yoo",
-    title: "Director of Acquisitions",
-    phone: "602-299-3679",
+    title: "Director of Acquisitions & Investor Relations",
+    phone: "858-343-8500",
+    phone2: "602-299-3679",
     email: "Alex@dcstreamlined.com",
   },
 ];
@@ -69,6 +70,17 @@ export function ContactSection() {
                         </div>
                         <span>{contact.phone}</span>
                       </a>
+                      {contact.phone2 && (
+                        <a
+                          href={`tel:${contact.phone2.replace(/-/g, "")}`}
+                          className="flex items-center justify-center md:justify-start gap-3 text-[#6B6560] hover:text-[#8B7355] transition-colors"
+                        >
+                          <div className="w-8 h-8 rounded-full bg-[#F4F1ED] flex items-center justify-center group-hover:bg-[#8B7355]/10 transition-colors">
+                            <Phone className="w-4 h-4" />
+                          </div>
+                          <span>{contact.phone2}</span>
+                        </a>
+                      )}
                       <a
                         href={`mailto:${contact.email}`}
                         className="flex items-center justify-center md:justify-start gap-3 text-[#6B6560] hover:text-[#8B7355] transition-colors"
