@@ -61,8 +61,17 @@ export function AboutSection() {
               </p>
             </BlurFade>
 
-            {/* Decorative Diamond */}
             <BlurFade delay={0.7} inView>
+              <p className="text-[#6B6560] leading-relaxed mt-6">
+                Through deep local market expertise, strong industry relationships,
+                and a commitment to excellence, we deliver exceptional homes and
+                compelling investment opportunities that stand apart in Arizona&apos;s
+                luxury residential landscape.
+              </p>
+            </BlurFade>
+
+            {/* Decorative Diamond */}
+            <BlurFade delay={0.8} inView>
               <div className="flex justify-center md:justify-start mt-12">
                 <div className="w-3 h-3 border border-[#8B7355] rotate-45" />
               </div>

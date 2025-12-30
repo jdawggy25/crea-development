@@ -15,7 +15,7 @@ const contacts = [
   {
     name: "Alex Yoo",
     title: "Director of Acquisitions",
-    phone: "858-343-8500",
+    phone: "602-299-3679",
     email: "Alex@dcstreamlined.com",
   },
 ];

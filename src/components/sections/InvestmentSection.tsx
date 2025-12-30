@@ -61,11 +61,18 @@ export function InvestmentSection() {
           {/* Right - Description + Stats */}
           <div className="flex flex-col justify-end">
             <BlurFade delay={0.3} inView>
-              <p className="text-lg text-white/70 leading-relaxed mb-10">
-                Real estate development is more than construction—it is the
-                strategic deployment of capital into tangible, appreciating
-                assets. We bridge the gap between financial vision and
-                architectural reality.
+              <p className="text-lg text-white/70 leading-relaxed mb-6">
+                We partner with high-net-worth individuals, family offices, and
+                select private capital firms to offer alternative investment
+                strategies through luxury residential real estate development.
+              </p>
+            </BlurFade>
+
+            <BlurFade delay={0.35} inView>
+              <p className="text-base text-white/50 leading-relaxed mb-10">
+                Our partnerships prioritize capital preservation while targeting
+                attractive, risk-adjusted returns through conservative underwriting,
+                strong equity positions, and clearly defined investment frameworks.
               </p>
             </BlurFade>
 
