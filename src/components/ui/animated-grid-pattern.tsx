@@ -2,6 +2,7 @@
 
 import {
   ComponentPropsWithoutRef,
+  useCallback,
   useEffect,
   useId,
   useRef,
@@ -38,43 +39,46 @@ export function AnimatedGridPattern({
   const id = useId()
   const containerRef = useRef(null)
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
-  const [squares, setSquares] = useState(() => generateSquares(numSquares))
+  const [squares, setSquares] = useState<Array<{ id: number; pos: number[] }>>([])
 
-  function getPos() {
+  const getPos = useCallback(() => {
     return [
       Math.floor((Math.random() * dimensions.width) / width),
       Math.floor((Math.random() * dimensions.height) / height),
     ]
-  }
-
-  // Adjust the generateSquares function to return objects with an id, x, and y
-  function generateSquares(count: number) {
-    return Array.from({ length: count }, (_, i) => ({
-      id: i,
-      pos: getPos(),
-    }))
-  }
+  }, [dimensions.width, dimensions.height, width, height])
 
   // Function to update a single square's position
-  const updateSquarePosition = (id: number) => {
+  const updateSquarePosition = useCallback((squareId: number) => {
     setSquares((currentSquares) =>
       currentSquares.map((sq) =>
-        sq.id === id
+        sq.id === squareId
           ? {
               ...sq,
-              pos: getPos(),
+              pos: [
+                Math.floor((Math.random() * dimensions.width) / width),
+                Math.floor((Math.random() * dimensions.height) / height),
+              ],
             }
           : sq
       )
     )
-  }
+  }, [dimensions.width, dimensions.height, width, height])
 
-  // Update squares to animate in
+  // Update squares when dimensions change
   useEffect(() => {
     if (dimensions.width && dimensions.height) {
-      setSquares(generateSquares(numSquares))
+      setSquares(
+        Array.from({ length: numSquares }, (_, i) => ({
+          id: i,
+          pos: [
+            Math.floor((Math.random() * dimensions.width) / width),
+            Math.floor((Math.random() * dimensions.height) / height),
+          ],
+        }))
+      )
     }
-  }, [dimensions, numSquares, generateSquares])
+  }, [dimensions.width, dimensions.height, numSquares, width, height])
 
   // Resize observer to update container dimensions
   useEffect(() => {

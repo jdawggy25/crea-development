@@ -61,7 +61,7 @@ export function ProjectsSection() {
 
           {/* Watermark Text */}
           <BlurFade delay={0.6} inView>
-            <p className="font-[family-name:var(--font-playfair)] text-[60px] sm:text-[90px] md:text-[120px] lg:text-[180px] text-[#E8E4DF] leading-none mt-8 select-none pointer-events-none">
+            <p className="font-[family-name:var(--font-playfair)] text-[40px] sm:text-[60px] md:text-[100px] lg:text-[140px] xl:text-[180px] text-[#E8E4DF] leading-none mt-8 select-none pointer-events-none whitespace-nowrap overflow-hidden">
               COMING SOON
             </p>
           </BlurFade>

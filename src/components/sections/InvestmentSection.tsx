@@ -45,7 +45,7 @@ export function InvestmentSection() {
             </BlurFade>
 
             <BlurFade delay={0.2} inView>
-              <h2 className="font-[family-name:var(--font-playfair)] text-5xl md:text-6xl lg:text-7xl leading-[1.05]">
+              <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05]">
                 <TextAnimate animation="blurInUp" by="word">
                   Capital
                 </TextAnimate>{" "}
