@@ -1,0 +1,83 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { BlurFade } from "@/components/ui/blur-fade";
+import { TextAnimate } from "@/components/ui/text-animate";
+import { ShimmerButton } from "@/components/ui/shimmer-button";
+
+export function HeroSection() {
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden"
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/hero.png"
+          alt="Luxury Desert Home at Sunset"
+          fill
+          className="object-cover"
+          priority
+          quality={90}
+        />
+        {/* Gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl mx-auto px-6">
+        <BlurFade delay={0.2} inView>
+          <span className="inline-block text-[11px] uppercase tracking-[4px] text-white/80 mb-8">
+            Scottsdale &bull; Paradise Valley &bull; Arcadia &bull; Biltmore
+          </span>
+        </BlurFade>
+
+        <BlurFade delay={0.4} inView>
+          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal mb-4 leading-[1.1]">
+            <TextAnimate animation="blurInUp" by="word">
+              Luxury Custom Home
+            </TextAnimate>
+          </h1>
+        </BlurFade>
+
+        <BlurFade delay={0.5} inView>
+          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal mb-8 leading-[1.1]">
+            <span className="text-white italic">Development</span>
+          </h1>
+        </BlurFade>
+
+        <BlurFade delay={0.7} inView>
+          <p className="text-base sm:text-lg md:text-xl font-light text-white/85 mb-12 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
+            Specializing in high-end, ground-up spec homes throughout
+            Arizona&apos;s most sought-after markets.
+          </p>
+        </BlurFade>
+
+        <BlurFade delay={0.9} inView className="flex justify-center">
+          <Link href="#contact">
+            <ShimmerButton
+              className="px-10 py-4"
+              shimmerColor="#C9A96E"
+              shimmerSize="0.1em"
+              background="rgba(201, 169, 110, 0.9)"
+              borderRadius="9999px"
+            >
+              <span className="text-[12px] uppercase tracking-[2px] font-semibold text-white">
+                Discuss Your Project
+              </span>
+            </ShimmerButton>
+          </Link>
+        </BlurFade>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        <BlurFade delay={1.2} inView>
+          <div className="w-[1px] h-16 bg-gradient-to-b from-white/60 to-transparent animate-pulse" />
+        </BlurFade>
+      </div>
+    </section>
+  );
+}
