@@ -35,8 +35,7 @@ export function HeroSection() {
           muted
           loop
           playsInline
-          preload="metadata"
-          poster="/images/hero-poster.jpg"
+          preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
         >
           {/* Mobile-optimized video for smaller screens */}
