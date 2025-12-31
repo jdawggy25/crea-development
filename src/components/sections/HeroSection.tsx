@@ -1,24 +1,44 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { TextAnimate } from "@/components/ui/text-animate";
 
 export function HeroSection() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Smooth loop - restart slightly before end to avoid black frame
+    const handleTimeUpdate = () => {
+      if (video.duration && video.currentTime > video.duration - 0.5) {
+        video.currentTime = 0;
+      }
+    };
+
+    video.addEventListener("timeupdate", handleTimeUpdate);
+    return () => video.removeEventListener("timeupdate", handleTimeUpdate);
+  }, []);
+
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden"
+      className="relative min-h-[100svh] flex items-center justify-center text-center text-white overflow-hidden"
     >
       {/* Background Video */}
       <div className="absolute inset-0 -z-10">
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
+          poster="/images/hero.png"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/videos/hero-drone.mov" type="video/quicktime" />
           <source src="/videos/hero-drone.mov" type="video/mp4" />
         </video>
         {/* Gradient overlay for text readability */}

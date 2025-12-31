@@ -60,18 +60,18 @@ const teamMembers = [
 
 export function TeamSection() {
   return (
-    <section id="team" className="py-24 md:py-32 bg-[#1C1917] text-white">
-      <div className="container">
+    <section id="team" className="py-16 md:py-24 lg:py-32 bg-[#1C1917] text-white">
+      <div className="container px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <BlurFade delay={0.1} inView>
-            <span className="text-[11px] uppercase tracking-[3px] text-[#C9A96E] mb-6 block">
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[2px] sm:tracking-[3px] text-[#C9A96E] mb-4 sm:mb-6 block">
               Our Network
             </span>
           </BlurFade>
 
           <BlurFade delay={0.2} inView>
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl leading-[1.1] mb-6">
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-4 sm:mb-6">
               <TextAnimate animation="blurInUp" by="word">
                 The
               </TextAnimate>{" "}
@@ -80,7 +80,7 @@ export function TeamSection() {
           </BlurFade>
 
           <BlurFade delay={0.3} inView>
-            <p className="text-lg text-white/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed px-2">
               Every CREA project is backed by Arizona&apos;s most experienced
               professionals—decades of proven success across lending, construction,
               design, and sales.
@@ -92,28 +92,28 @@ export function TeamSection() {
         <div className="space-y-0">
           {teamMembers.map((member, index) => (
             <BlurFade key={member.name} delay={0.3 + index * 0.08} inView>
-              <div className="group py-8 border-b border-white/10 hover:bg-white/[0.02] transition-colors px-4 -mx-4">
-                <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-4 lg:gap-12">
+              <div className="group py-6 sm:py-8 border-b border-white/10 hover:bg-white/[0.02] transition-colors px-2 sm:px-4 -mx-2 sm:-mx-4">
+                <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-3 sm:gap-4 lg:gap-12">
                   {/* Left - Name and Role */}
                   <div>
-                    <h3 className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl text-white group-hover:text-[#C9A96E] transition-colors">
+                    <h3 className="font-[family-name:var(--font-playfair)] text-lg sm:text-xl md:text-2xl text-white group-hover:text-[#C9A96E] transition-colors">
                       {member.name}
                     </h3>
-                    <p className="text-[11px] uppercase tracking-[2px] text-[#C9A96E] mt-1">
+                    <p className="text-[10px] sm:text-[11px] uppercase tracking-[1.5px] sm:tracking-[2px] text-[#C9A96E] mt-1">
                       {member.role}
                     </p>
-                    <p className="text-sm text-white/50 mt-1">
+                    <p className="text-xs sm:text-sm text-white/50 mt-1">
                       {member.company}
                     </p>
                     {member.projects && (
-                      <p className="text-xs text-white/30 mt-2">
+                      <p className="text-[10px] sm:text-xs text-white/30 mt-1.5 sm:mt-2">
                         Projects: {member.projects}
                       </p>
                     )}
                   </div>
 
                   {/* Right - Description */}
-                  <p className="text-white/60 leading-relaxed text-sm md:text-base group-hover:text-white/80 transition-colors">
+                  <p className="text-white/60 leading-relaxed text-xs sm:text-sm md:text-base group-hover:text-white/80 transition-colors mt-2 lg:mt-0">
                     {member.description}
                   </p>
                 </div>
