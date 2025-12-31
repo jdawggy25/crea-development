@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { TextAnimate } from "@/components/ui/text-animate";
 
@@ -10,18 +9,20 @@ export function HeroSection() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden"
     >
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 -z-10">
-        <Image
-          src="/images/hero.png"
-          alt="Luxury Desert Home at Sunset"
-          fill
-          className="object-cover"
-          priority
-          quality={90}
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-drone.mov" type="video/quicktime" />
+          <source src="/videos/hero-drone.mov" type="video/mp4" />
+        </video>
         {/* Gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
       </div>
 
       {/* Content */}
