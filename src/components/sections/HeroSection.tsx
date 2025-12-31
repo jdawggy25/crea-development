@@ -1,10 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { TextAnimate } from "@/components/ui/text-animate";
-import { ShimmerButton } from "@/components/ui/shimmer-button";
 
 export function HeroSection() {
   return (
@@ -37,7 +35,7 @@ export function HeroSection() {
         <BlurFade delay={0.4} inView>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal mb-4 leading-[1.1]">
             <TextAnimate animation="blurInUp" by="word">
-              Luxury Custom Home
+              Luxury Residential
             </TextAnimate>
           </h1>
         </BlurFade>
@@ -55,21 +53,6 @@ export function HeroSection() {
           </p>
         </BlurFade>
 
-        <BlurFade delay={0.9} inView className="flex justify-center">
-          <Link href="#contact">
-            <ShimmerButton
-              className="px-10 py-4"
-              shimmerColor="#C9A96E"
-              shimmerSize="0.1em"
-              background="rgba(201, 169, 110, 0.9)"
-              borderRadius="9999px"
-            >
-              <span className="text-[12px] uppercase tracking-[2px] font-semibold text-white">
-                Discuss Your Project
-              </span>
-            </ShimmerButton>
-          </Link>
-        </BlurFade>
       </div>
 
       {/* Scroll Indicator */}

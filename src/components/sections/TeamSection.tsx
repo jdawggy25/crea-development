@@ -16,7 +16,7 @@ const teamMembers = [
     company: "Private Hard Money",
     role: "Lender",
     description:
-      "One of Arizona's most experienced private lenders with 30+ years in the industry and over 50,000 loans funded totaling well over 10 figures. His track record spans multiple market cycles, providing rare insight into risk management and deal structure. Scott has consulted on thousands of custom homes across Arcadia, Paradise Valley, Scottsdale, and Northern Arizona. When Scott is the lender, investors gain confidence knowing the project is backed by an industry veteran with decades of success.",
+      "One of Arizona's most experienced private lenders with 30+ years in the industry and over 50,000 loans funded totaling well over 10 figures. His track record spans multiple market cycles, providing rare insight into risk management and deal structure. Scott has consulted on thousands of luxury homes across Arcadia, Paradise Valley, Scottsdale, and Northern Arizona. When Scott is the lender, investors gain confidence knowing the project is backed by an industry veteran with decades of success.",
   },
   {
     name: "Bill George",
