@@ -35,10 +35,18 @@ export function HeroSection() {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
+          poster="/images/hero-poster.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/videos/hero-drone.mov" type="video/mp4" />
+          {/* Mobile-optimized video for smaller screens */}
+          <source
+            src="/videos/hero-drone-mobile.mp4"
+            type="video/mp4"
+            media="(max-width: 768px)"
+          />
+          {/* Full quality for desktop */}
+          <source src="/videos/hero-drone.mp4" type="video/mp4" />
         </video>
         {/* Gradient overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />

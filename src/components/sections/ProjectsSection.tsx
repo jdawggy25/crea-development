@@ -108,10 +108,11 @@ export function ProjectsSection() {
               muted
               loop
               playsInline
-              preload="auto"
+              preload="none"
+              poster="/images/property-poster.jpg"
               className="w-full aspect-[16/10] sm:aspect-video object-cover"
             >
-              <source src="/videos/property-tour.mov" type="video/mp4" />
+              <source src="/videos/property-tour.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
             <div className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8">
