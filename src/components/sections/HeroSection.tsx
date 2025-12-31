@@ -36,7 +36,6 @@ export function HeroSection() {
           loop
           playsInline
           preload="auto"
-          poster="/images/hero.png"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/videos/hero-drone.mov" type="video/mp4" />

@@ -108,8 +108,7 @@ export function ProjectsSection() {
               muted
               loop
               playsInline
-              preload="metadata"
-              poster="/images/exterior-modern.webp"
+              preload="auto"
               className="w-full aspect-[16/10] sm:aspect-video object-cover"
             >
               <source src="/videos/property-tour.mov" type="video/mp4" />
