@@ -40,7 +40,7 @@ export function InvestmentSection() {
           <div>
             <BlurFade delay={0.1} inView>
               <span className="text-[11px] uppercase tracking-[3px] text-[#C9A96E] mb-6 block">
-                Private Partnerships
+                Raising Capital
               </span>
             </BlurFade>
 
@@ -62,17 +62,19 @@ export function InvestmentSection() {
           <div className="flex flex-col justify-end">
             <BlurFade delay={0.3} inView>
               <p className="text-lg text-white/70 leading-relaxed mb-6">
-                We partner with high-net-worth individuals, family offices, and
-                select private capital firms to offer alternative investment
-                strategies through luxury residential real estate development.
+                We are actively raising capital for luxury residential developments
+                launching in 2026. We partner with high-net-worth individuals,
+                family offices, and select private capital firms seeking exposure
+                to Arizona&apos;s premier luxury market.
               </p>
             </BlurFade>
 
             <BlurFade delay={0.35} inView>
               <p className="text-base text-white/50 leading-relaxed mb-10">
-                Our partnerships prioritize capital preservation while targeting
-                attractive, risk-adjusted returns through conservative underwriting,
-                strong equity positions, and clearly defined investment frameworks.
+                With additional investor capital, we can expand our pipeline and
+                take on more properties—creating greater opportunities for
+                attractive, risk-adjusted returns through conservative underwriting
+                and clearly defined investment frameworks.
               </p>
             </BlurFade>
 
@@ -80,8 +82,11 @@ export function InvestmentSection() {
               <div className="flex flex-wrap justify-center md:justify-start gap-8 sm:gap-12 md:gap-16">
                 <div>
                   <div className="flex items-baseline">
+                    <span className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]">
+                      $
+                    </span>
                     <NumberTicker
-                      value={250}
+                      value={25}
                       className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]"
                     />
                     <span className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]">
@@ -89,21 +94,7 @@ export function InvestmentSection() {
                     </span>
                   </div>
                   <p className="text-[10px] uppercase tracking-[2px] text-white/50 mt-2">
-                    Project Value
-                  </p>
-                </div>
-                <div>
-                  <div className="flex items-baseline">
-                    <NumberTicker
-                      value={100}
-                      className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]"
-                    />
-                    <span className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]">
-                      %
-                    </span>
-                  </div>
-                  <p className="text-[10px] uppercase tracking-[2px] text-white/50 mt-2">
-                    Completion Rate
+                    Curated for 2026
                   </p>
                 </div>
               </div>

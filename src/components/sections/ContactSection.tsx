@@ -8,7 +8,7 @@ import { Phone, Mail } from "lucide-react";
 const contacts = [
   {
     name: "Diego Colwell",
-    title: "President",
+    title: "Founder & President",
     phone: "480-341-1881",
     email: "Diego@dcstreamlined.com",
   },

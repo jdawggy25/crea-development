@@ -3,7 +3,6 @@
 import { BlurFade } from "@/components/ui/blur-fade";
 import {
   MapTrifold,
-  Compass,
   HardHat,
   ChartLineUp,
   Scales,
@@ -20,15 +19,8 @@ const services = [
     href: "#contact",
   },
   {
-    Icon: Compass,
-    name: "Custom Design",
-    description:
-      "Collaborating with top architects to create distinctive residences that balance elegance with luxury.",
-    href: "#contact",
-  },
-  {
     Icon: HardHat,
-    name: "Construction",
+    name: "Development",
     description:
       "End-to-end project oversight ensuring quality craftsmanship and meticulous attention to detail.",
     href: "#contact",
