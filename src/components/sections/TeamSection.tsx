@@ -29,7 +29,6 @@ const teamMembers = [
     name: "Fabiola Sweis",
     company: "Folklore Spaces",
     role: "Interior Designer",
-    projects: "Emile Zola & Wood",
     description:
       "A luxury, highly exclusive interior design studio with 15+ years of experience across high-end residential, commercial, and hospitality projects. Known for story-driven, culturally inspired aesthetic, working with a limited number of clients each year to deliver fully bespoke, detail-rich design. Handles everything from concept and construction documentation to procurement and installation.",
   },
@@ -44,7 +43,6 @@ const teamMembers = [
     name: "Altitude Design Ltd.",
     company: "Residential Architecture",
     role: "Architect",
-    projects: "Emile Zola & Wood",
     description:
       "A full-service residential design and drafting firm known for translating client vision into thoughtful, permit-ready architecture. They've produced our plans multiple times, giving them deep familiarity with every detail. Because plans have been submitted and approved repeatedly, and they maintain strong relationships with the city, projects move through approval significantly faster.",
   },
@@ -52,7 +50,6 @@ const teamMembers = [
     name: "Design Tank Architecture",
     company: "Luxury Residential Design",
     role: "Architect",
-    projects: "Marion Way",
     description:
       "A leading luxury residential design firm known for modern homes with exceptional indoor-outdoor integration. Multiple Gold Award winners at the 2025 Iconic Design Awards along with other major regional and national honors. Deep experience across Scottsdale, Phoenix, Paradise Valley, and North Scottsdale—they understand what high-end buyers want.",
   },
@@ -105,11 +102,6 @@ export function TeamSection() {
                     <p className="text-xs sm:text-sm text-white/50 mt-1">
                       {member.company}
                     </p>
-                    {member.projects && (
-                      <p className="text-[10px] sm:text-xs text-white/30 mt-1.5 sm:mt-2">
-                        Projects: {member.projects}
-                      </p>
-                    )}
                   </div>
 
                   {/* Right - Description */}

@@ -46,29 +46,11 @@ export function DevelopmentsSection() {
               borderWidth={1}
             />
 
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12 text-center">
-              <div>
-                <div className="flex items-baseline justify-center">
-                  <span className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#8B7355]">
-                    $
-                  </span>
-                  <NumberTicker
-                    value={25}
-                    className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#8B7355]"
-                  />
-                  <span className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#8B7355]">
-                    M+
-                  </span>
-                </div>
-                <p className="text-[10px] uppercase tracking-[2px] text-[#6B6560] mt-3">
-                  In Development 2026
-                </p>
-              </div>
-
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 text-center max-w-2xl mx-auto">
               <div>
                 <div className="flex items-baseline justify-center">
                   <NumberTicker
-                    value={3}
+                    value={5}
                     className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#8B7355]"
                   />
                   <span className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#8B7355]">
@@ -92,10 +74,7 @@ export function DevelopmentsSection() {
 
             <div className="mt-10 pt-8 border-t border-[#E8E4DF]">
               <p className="text-[#6B6560] text-center leading-relaxed max-w-2xl mx-auto">
-                We have additional builds in the pipeline and are actively seeking
-                new opportunities. With additional investor capital, we can expand
-                into more premium properties across Arizona&apos;s most sought-after
-                neighborhoods.
+                We have additional builds in the pipeline.
               </p>
             </div>
           </div>

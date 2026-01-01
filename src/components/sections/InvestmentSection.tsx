@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { TextAnimate } from "@/components/ui/text-animate";
-import { NumberTicker } from "@/components/ui/number-ticker";
 import { BorderBeam } from "@/components/ui/border-beam";
 
 const principles = [
@@ -61,43 +60,9 @@ export function InvestmentSection() {
           {/* Right - Description + Stats */}
           <div className="flex flex-col justify-end">
             <BlurFade delay={0.3} inView>
-              <p className="text-lg text-white/70 leading-relaxed mb-6">
-                We are actively raising capital for luxury residential developments
-                launching in 2026. We partner with high-net-worth individuals,
-                family offices, and select private capital firms seeking exposure
-                to Arizona&apos;s premier luxury market.
+              <p className="text-lg text-white/70 leading-relaxed">
+                The firm partners with high net-worth individuals, family offices, and select private capital firms to offer alternative investment strategies through luxury residential real estate development. These partnerships are structured to prioritize capital preservation while targeting attractive, risk-adjusted returns through conservative underwriting, strong equity positions, and clearly defined investment frameworks. Transparency, alignment of interests, and a risk-averse approach are central to every investor relationship. We are also actively raising capital for upcoming luxury residential developments and new acquisitions.
               </p>
-            </BlurFade>
-
-            <BlurFade delay={0.35} inView>
-              <p className="text-base text-white/50 leading-relaxed mb-10">
-                With additional investor capital, we can expand our pipeline and
-                take on more properties—creating greater opportunities for
-                attractive, risk-adjusted returns through conservative underwriting
-                and clearly defined investment frameworks.
-              </p>
-            </BlurFade>
-
-            <BlurFade delay={0.4} inView>
-              <div className="flex flex-wrap justify-center md:justify-start gap-8 sm:gap-12 md:gap-16">
-                <div>
-                  <div className="flex items-baseline">
-                    <span className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]">
-                      $
-                    </span>
-                    <NumberTicker
-                      value={25}
-                      className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]"
-                    />
-                    <span className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]">
-                      M+
-                    </span>
-                  </div>
-                  <p className="text-[10px] uppercase tracking-[2px] text-white/50 mt-2">
-                    Curated for 2026
-                  </p>
-                </div>
-              </div>
             </BlurFade>
           </div>
         </div>

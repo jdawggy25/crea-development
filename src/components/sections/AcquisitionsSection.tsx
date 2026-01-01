@@ -6,7 +6,22 @@ import { NumberTicker } from "@/components/ui/number-ticker";
 
 export function AcquisitionsSection() {
   return (
-    <section id="acquisitions" className="py-24 md:py-32 bg-[#1C1917] text-white relative overflow-hidden">
+    <section id="acquisitions" className="py-24 md:py-32 text-white relative overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/videos/hero-drone.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/70" />
+
       {/* Subtle gradient accent */}
       <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(139,115,85,0.08)_0%,transparent_70%)] pointer-events-none" />
 
@@ -20,12 +35,15 @@ export function AcquisitionsSection() {
           </BlurFade>
 
           <BlurFade delay={0.2} inView>
-            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl leading-[1.1] mb-6">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl md:text-6xl leading-[1.1] mb-3">
               <TextAnimate animation="blurInUp" by="word">
                 Strategic
               </TextAnimate>{" "}
               <span className="text-[#C9A96E]">Acquisitions</span>
             </h2>
+            <p className="text-lg md:text-xl text-white/60 mb-6">
+              Real Estate Acquisitions & Joint Venture
+            </p>
           </BlurFade>
 
           <BlurFade delay={0.3} inView>
@@ -83,9 +101,7 @@ export function AcquisitionsSection() {
                 Off-Market Access
               </h3>
               <p className="text-white/60 leading-relaxed">
-                Through deep relationships with local sellers, estate attorneys, and family
-                offices, we source opportunities before they reach the open market—securing
-                premium parcels at favorable terms.
+                Through deep relationships and trust, we source opportunities before they reach the open market securing premium parcels at favorable terms.
               </p>
             </div>
           </BlurFade>

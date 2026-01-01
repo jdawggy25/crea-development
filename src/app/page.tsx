@@ -20,9 +20,9 @@ export default function Home() {
         <AboutSection />
         <ProcessSection />
         <AcquisitionsSection />
+        <InvestmentSection />
         <DevelopmentsSection />
         <ProjectsSection />
-        <InvestmentSection />
         <TeamSection />
         <ContactSection />
         <MapSection />
