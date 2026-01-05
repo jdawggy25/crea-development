@@ -50,7 +50,7 @@ export function AcquisitionsSection() {
             <p className="text-lg text-white/70 max-w-3xl mx-auto leading-relaxed">
               The CREA Development team has been instrumental in over{" "}
               <span className="text-[#C9A96E] font-medium">$300M</span> in off-market
-              luxury real estate acquisitions over the past two years.
+              luxury real estate acquisitions & joint ventures over the past three years.
             </p>
           </BlurFade>
         </div>
@@ -77,7 +77,7 @@ export function AcquisitionsSection() {
             </div>
             <div className="text-center">
               <NumberTicker
-                value={2}
+                value={3}
                 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]"
               />
               <span className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-[#C9A96E]">

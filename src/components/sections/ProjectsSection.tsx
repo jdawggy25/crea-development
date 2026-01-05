@@ -7,8 +7,8 @@ import { TextAnimate } from "@/components/ui/text-animate";
 
 const projects = [
   {
-    name: "Pierson Estate",
-    location: "Paradise Valley",
+    name: "Cactus Corridor",
+    location: null,
     status: "In Development",
     images: [
       "/images/pierson-elevation.jpg",
@@ -162,6 +162,12 @@ export function ProjectsSection() {
               sought-after neighborhoods.
             </p>
           </BlurFade>
+
+          <BlurFade delay={0.35} inView>
+            <p className="text-lg sm:text-xl font-medium text-[#8B7355] mt-4">
+              $25M+ in Ongoing Developments
+            </p>
+          </BlurFade>
         </div>
 
         {/* Projects Grid */}
@@ -173,30 +179,6 @@ export function ProjectsSection() {
           ))}
         </div>
 
-        {/* Video Section */}
-        <BlurFade delay={0.6} inView>
-          <div className="mt-10 md:mt-16 relative overflow-hidden rounded-xl">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              className="w-full aspect-[16/10] sm:aspect-video object-cover"
-            >
-              <source src="/videos/property-tour.mp4" type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-            <div className="absolute bottom-4 left-4 sm:bottom-8 sm:left-8">
-              <p className="text-[9px] sm:text-[10px] uppercase tracking-[1.5px] sm:tracking-[2px] text-white/70 mb-1 sm:mb-2">
-                Property Tour
-              </p>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl sm:text-2xl md:text-3xl text-white">
-                7780 N 65th Street
-              </h3>
-            </div>
-          </div>
-        </BlurFade>
       </div>
     </section>
   );

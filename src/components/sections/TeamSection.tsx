@@ -20,7 +20,7 @@ const teamMembers = [
   },
   {
     name: "Bill George",
-    company: "Premier Construction",
+    company: "",
     role: "Builder",
     description:
       "30+ years of construction experience, previously running one of Arizona's largest demolition companies and managing numerous luxury projects simultaneously. Works exclusively in strict, high-end areas with demanding clientele. Bill personally oversees every job site, keeps critical work in-house, and maintains elite quality control. His decades-deep network ensures no challenge goes unsolved. Investors gain a builder known for precision, reliability, and field expertise.",

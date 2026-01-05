@@ -8,9 +8,9 @@ export function AboutSection() {
   return (
     <section id="about" className="py-24 md:py-32 bg-[#FAF8F5]">
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Text Content */}
-          <div className="max-w-xl text-center md:text-left">
+          <div className="max-w-lg text-center md:text-left">
             <BlurFade delay={0.1} inView>
               <span className="text-[11px] uppercase tracking-[3px] text-[#8B7355] mb-6 block">
                 About Crea
@@ -54,7 +54,7 @@ export function AboutSection() {
             </BlurFade>
 
             <BlurFade delay={0.6} inView>
-              <p className="text-[#6B6560] leading-relaxed">
+              <p className="text-[#6B6560] mb-6 leading-relaxed">
                 Crea Development takes a disciplined, data-driven approach to
                 every project—from land acquisition and underwriting to design,
                 construction, and exit strategy.
@@ -62,7 +62,7 @@ export function AboutSection() {
             </BlurFade>
 
             <BlurFade delay={0.7} inView>
-              <p className="text-[#6B6560] leading-relaxed mt-6">
+              <p className="text-[#6B6560] leading-relaxed">
                 Through deep local market expertise, strong industry relationships,
                 and a commitment to excellence, we deliver exceptional homes and
                 compelling investment opportunities that stand apart in Arizona&apos;s
@@ -72,7 +72,7 @@ export function AboutSection() {
 
             {/* Decorative Diamond */}
             <BlurFade delay={0.8} inView>
-              <div className="flex justify-center md:justify-start mt-12">
+              <div className="flex justify-center md:justify-start mt-10">
                 <div className="w-3 h-3 border border-[#8B7355] rotate-45" />
               </div>
             </BlurFade>
@@ -80,14 +80,15 @@ export function AboutSection() {
 
           {/* Image */}
           <BlurFade delay={0.4} inView>
-            <div className="relative">
-              <Image
-                src="/images/detail.png"
-                alt="Architectural Detail - Modern Luxury Construction"
-                width={600}
-                height={800}
-                className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
-              />
+            <div className="relative md:sticky md:top-24">
+              <div className="aspect-[3/4] overflow-hidden rounded-lg">
+                <Image
+                  src="/images/detail.png"
+                  alt="Architectural Detail - Modern Luxury Construction"
+                  fill
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
             </div>
           </BlurFade>
         </div>
