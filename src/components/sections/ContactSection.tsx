@@ -16,7 +16,6 @@ const contacts = [
     name: "Alex Yoo",
     title: "Director of Acquisitions & Investor Relations",
     phone: "858-343-8500",
-    phone2: "602-299-3679",
     email: "Alex@dcstreamlined.com",
   },
 ];
